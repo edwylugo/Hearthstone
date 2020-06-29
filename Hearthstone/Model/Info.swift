@@ -8,22 +8,15 @@
 
 import Foundation
 
-public struct Info: Codable {
+class Info: Codable {
     let classes: [String]
     let types: [String]
     let races: [String]
     
-    enum CodingKeys: String, CodingKey {
-        case classes
-        case types
-        case races
-    }
-
-    public init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        classes = try container.decode([String].self, forKey: .classes)
-        types = try container.decode([String].self, forKey: .types)
-        races = try container.decode([String].self, forKey: .races)
+    init(classes: [String], types: [String], races: [String]) {
+        self.classes = classes
+        self.types = types
+        self.races = races
     }
 }
 

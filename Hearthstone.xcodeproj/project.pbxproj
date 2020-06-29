@@ -33,6 +33,17 @@
 		59FEF51724AA8B6E00F3BC8D /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF50624AA8B6E00F3BC8D /* Roboto-Italic.ttf */; };
 		59FEF51824AA8B6E00F3BC8D /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF50724AA8B6E00F3BC8D /* Roboto-Regular.ttf */; };
 		59FEF51924AA8B6E00F3BC8D /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF50824AA8B6E00F3BC8D /* Roboto-ThinItalic.ttf */; };
+		59FEF51B24AA8D4E00F3BC8D /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF51A24AA8D4E00F3BC8D /* Observable.swift */; };
+		59FEF51D24AA8D6700F3BC8D /* CheckInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF51C24AA8D6700F3BC8D /* CheckInternet.swift */; };
+		59FEF52024AA8D9800F3BC8D /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF51F24AA8D9800F3BC8D /* NavigationController.swift */; };
+		59FEF52324AA8DB000F3BC8D /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF52224AA8DB000F3BC8D /* CoordinatorProtocol.swift */; };
+		59FEF52924AA8E6200F3BC8D /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF52724AA8E6200F3BC8D /* DetailsViewController.swift */; };
+		59FEF52A24AA8E6200F3BC8D /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF52824AA8E6200F3BC8D /* DetailsViewController.xib */; };
+		59FEF52D24AA8E7E00F3BC8D /* InitialCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF52C24AA8E7E00F3BC8D /* InitialCoordinator.swift */; };
+		59FEF53124AA8F2D00F3BC8D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF52F24AA8F2D00F3BC8D /* HomeViewController.swift */; };
+		59FEF53224AA8F2D00F3BC8D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF53024AA8F2D00F3BC8D /* HomeViewController.xib */; };
+		59FEF53424AA9A8300F3BC8D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF53324AA9A8300F3BC8D /* HomeViewModel.swift */; };
+		59FEF53A24AA9C5800F3BC8D /* CommonToUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF53924AA9C5800F3BC8D /* CommonToUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +75,17 @@
 		59FEF50624AA8B6E00F3BC8D /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
 		59FEF50724AA8B6E00F3BC8D /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		59FEF50824AA8B6E00F3BC8D /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		59FEF51A24AA8D4E00F3BC8D /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		59FEF51C24AA8D6700F3BC8D /* CheckInternet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInternet.swift; sourceTree = "<group>"; };
+		59FEF51F24AA8D9800F3BC8D /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		59FEF52224AA8DB000F3BC8D /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		59FEF52724AA8E6200F3BC8D /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		59FEF52824AA8E6200F3BC8D /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		59FEF52C24AA8E7E00F3BC8D /* InitialCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialCoordinator.swift; sourceTree = "<group>"; };
+		59FEF52F24AA8F2D00F3BC8D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		59FEF53024AA8F2D00F3BC8D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		59FEF53324AA9A8300F3BC8D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		59FEF53924AA9C5800F3BC8D /* CommonToUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonToUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,14 +118,18 @@
 		59FEF4D824AA844C00F3BC8D /* Hearthstone */ = {
 			isa = PBXGroup;
 			children = (
-				59FEF4F624AA8B4400F3BC8D /* Resources */,
-				59FEF4F324AA892300F3BC8D /* API */,
-				59FEF4F024AA859700F3BC8D /* Model */,
 				59FEF4D924AA844C00F3BC8D /* AppDelegate.swift */,
 				59FEF4DB24AA844C00F3BC8D /* SceneDelegate.swift */,
-				59FEF4DD24AA844C00F3BC8D /* ViewController.swift */,
+				59FEF51A24AA8D4E00F3BC8D /* Observable.swift */,
+				59FEF51C24AA8D6700F3BC8D /* CheckInternet.swift */,
 				59FEF4DF24AA844C00F3BC8D /* Main.storyboard */,
 				59FEF4EA24AA845100F3BC8D /* Info.plist */,
+				59FEF51E24AA8D8900F3BC8D /* Coordinator */,
+				59FEF4F324AA892300F3BC8D /* API */,
+				59FEF4F024AA859700F3BC8D /* Model */,
+				59FEF52424AA8DD700F3BC8D /* Scenes */,
+				59FEF53724AA9C4100F3BC8D /* Manager */,
+				59FEF4F624AA8B4400F3BC8D /* Resources */,
 				59FEF4E224AA844C00F3BC8D /* Hearthstone.xcdatamodeld */,
 			);
 			path = Hearthstone;
@@ -157,6 +183,77 @@
 				59FEF50824AA8B6E00F3BC8D /* Roboto-ThinItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		59FEF51E24AA8D8900F3BC8D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				59FEF51F24AA8D9800F3BC8D /* NavigationController.swift */,
+				59FEF52224AA8DB000F3BC8D /* CoordinatorProtocol.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		59FEF52424AA8DD700F3BC8D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				59FEF52B24AA8E6D00F3BC8D /* InitialCoordinator */,
+				59FEF52E24AA8F1B00F3BC8D /* Start */,
+				59FEF52524AA8DFF00F3BC8D /* Home */,
+				59FEF52624AA8E0900F3BC8D /* Details */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		59FEF52524AA8DFF00F3BC8D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				59FEF52F24AA8F2D00F3BC8D /* HomeViewController.swift */,
+				59FEF53024AA8F2D00F3BC8D /* HomeViewController.xib */,
+				59FEF53324AA9A8300F3BC8D /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		59FEF52624AA8E0900F3BC8D /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				59FEF52724AA8E6200F3BC8D /* DetailsViewController.swift */,
+				59FEF52824AA8E6200F3BC8D /* DetailsViewController.xib */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		59FEF52B24AA8E6D00F3BC8D /* InitialCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				59FEF52C24AA8E7E00F3BC8D /* InitialCoordinator.swift */,
+			);
+			path = InitialCoordinator;
+			sourceTree = "<group>";
+		};
+		59FEF52E24AA8F1B00F3BC8D /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				59FEF4DD24AA844C00F3BC8D /* ViewController.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		59FEF53724AA9C4100F3BC8D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				59FEF53824AA9C4A00F3BC8D /* Utils */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		59FEF53824AA9C4A00F3BC8D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				59FEF53924AA9C5800F3BC8D /* CommonToUI.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,12 +328,14 @@
 				59FEF50D24AA8B6E00F3BC8D /* Roboto-MediumItalic.ttf in Resources */,
 				59FEF50E24AA8B6E00F3BC8D /* Roboto-Bold.ttf in Resources */,
 				59FEF51224AA8B6E00F3BC8D /* Roboto-CondensedItalic.ttf in Resources */,
+				59FEF52A24AA8E6200F3BC8D /* DetailsViewController.xib in Resources */,
 				59FEF50924AA8B6E00F3BC8D /* Roboto-BoldCondensedItalic.ttf in Resources */,
 				59FEF50F24AA8B6E00F3BC8D /* Roboto-Black.ttf in Resources */,
 				59FEF51824AA8B6E00F3BC8D /* Roboto-Regular.ttf in Resources */,
 				59FEF50A24AA8B6E00F3BC8D /* Roboto-BoldItalic.ttf in Resources */,
 				59FEF51124AA8B6E00F3BC8D /* Roboto-BoldCondensed.ttf in Resources */,
 				59FEF4E124AA844C00F3BC8D /* Main.storyboard in Resources */,
+				59FEF53224AA8F2D00F3BC8D /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,10 +347,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				59FEF4DE24AA844C00F3BC8D /* ViewController.swift in Sources */,
+				59FEF52D24AA8E7E00F3BC8D /* InitialCoordinator.swift in Sources */,
 				59FEF4E424AA844C00F3BC8D /* Hearthstone.xcdatamodeld in Sources */,
+				59FEF52324AA8DB000F3BC8D /* CoordinatorProtocol.swift in Sources */,
+				59FEF52924AA8E6200F3BC8D /* DetailsViewController.swift in Sources */,
+				59FEF53A24AA9C5800F3BC8D /* CommonToUI.swift in Sources */,
 				59FEF4DA24AA844C00F3BC8D /* AppDelegate.swift in Sources */,
+				59FEF51B24AA8D4E00F3BC8D /* Observable.swift in Sources */,
+				59FEF52024AA8D9800F3BC8D /* NavigationController.swift in Sources */,
 				59FEF4F524AA894F00F3BC8D /* HearthstoreREST.swift in Sources */,
+				59FEF53424AA9A8300F3BC8D /* HomeViewModel.swift in Sources */,
+				59FEF51D24AA8D6700F3BC8D /* CheckInternet.swift in Sources */,
 				59FEF4F224AA85AC00F3BC8D /* Info.swift in Sources */,
+				59FEF53124AA8F2D00F3BC8D /* HomeViewController.swift in Sources */,
 				59FEF4DC24AA844C00F3BC8D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

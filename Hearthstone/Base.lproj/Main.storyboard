@@ -14,7 +14,39 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="Agx-rH-wui">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B61-rH-TSq">
+                                <rect key="frame" x="72.5" y="310.5" width="230" height="46"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="g5C-H4-cQe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="                Start here                ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goTabBarApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fao-Q5-FOB"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Agx-rH-wui" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="O5s-LW-eEB"/>
+                            <constraint firstItem="Agx-rH-wui" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Wsz-B1-xfi"/>
+                            <constraint firstItem="B61-rH-TSq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e8F-kD-Vdx"/>
+                            <constraint firstItem="Agx-rH-wui" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="pDP-8e-MVZ"/>
+                            <constraint firstItem="Agx-rH-wui" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qYa-M0-VBE"/>
+                            <constraint firstItem="B61-rH-TSq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qz7-Ke-Vxp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="jWd-PP-RxP"/>
@@ -42,4 +74,7 @@
             <point key="canvasLocation" x="138.40000000000001" y="97.601199400299862"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="banner" width="1956" height="2560"/>
+    </resources>
 </document>

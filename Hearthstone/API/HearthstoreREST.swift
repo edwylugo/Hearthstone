@@ -37,7 +37,7 @@ class HearthstoreREST {
     
     
     // Carregar dados da entidade Sincronismo (GET)
-           class func loadInfo(onComplete: @escaping (Info) -> Void, onError: @escaping (HearthstoreError) -> Void) {
+           class func loadInfo(onComplete: @escaping ([Info]) -> Void, onError: @escaping (HearthstoreError) -> Void) {
                print("basePath: \(basePath)")
                guard let url = URL(string: basePath) else {
                    onError(.url)
@@ -58,13 +58,11 @@ class HearthstoreREST {
                            guard let data = data else { return }
 
                            do {
-                               let listloadInfo = try JSONDecoder().decode(Info.self, from: data)
+                               let listloadInfo = try JSONDecoder().decode([Info].self, from: data)
                                onComplete(listloadInfo)
 
                             print("## Lista carregada com sucesso ##")
-                            print("Classes: \(listloadInfo.classes.count)")
-                            print("Races: \(listloadInfo.races.count)")
-                            print("Types: \(listloadInfo.types.count)")
+                            print("Total: \(listloadInfo.count)")
 
                            } catch {
                                print(error.localizedDescription)
