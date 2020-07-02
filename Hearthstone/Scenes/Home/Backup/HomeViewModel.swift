@@ -13,7 +13,7 @@ protocol HomeNavigationProtocol: AnyObject {
 }
 
 protocol HomeViewModelProtocol {
-    var dataSource: Observable<Info?> { get }
+    var dataSource: Observable<[Info]> { get }
     var error: Observable<Error?> { get }
     func setDataSource()
   //  func didSelectItemAt(indexPath: IndexPath)
@@ -21,19 +21,20 @@ protocol HomeViewModelProtocol {
 
 struct HomeViewModel: HomeViewModelProtocol {
     private weak var navigationDelegate: HomeNavigationProtocol?
-    var dataSource: Observable<Info?>
+    var dataSource: Observable<[Info]>
     var error: Observable<Error?>
     
     init(navigationDelegate: HomeNavigationProtocol? = nil) {
         self.navigationDelegate = navigationDelegate
         self.error = Observable(nil)
-        self.dataSource = Observable(nil)
+        self.dataSource = Observable([])
         setDataSource()
     }
     func setDataSource() {
         
         HearthstoreREST.loadInfo(onComplete: { infos in
-            self.dataSource.value = infos.self
+            self.dataSource.value = [infos.self]
+            print("self.dataSource.value: \(self.dataSource.value)")
         }) { error in
             DispatchQueue.main.async {
                 print(error)

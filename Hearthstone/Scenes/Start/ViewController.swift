@@ -14,11 +14,6 @@ class ViewController: UIViewController {
         return .lightContent
     }
     
-    @IBAction func goTabBarApp(_ sender: Any) {
-        let coordinator = InitialCoordinator(presenter: self.navigationController!)
-        coordinator.start()        
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,7 +31,4 @@ class ViewController: UIViewController {
      }
 }
 
-extension ViewController: HomeNavigationProtocol {
-    func gotoInfoDetail(info: Info) {}
-}
 

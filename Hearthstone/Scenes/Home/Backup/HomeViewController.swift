@@ -10,6 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
@@ -35,17 +36,19 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Hearthstone"
+        
         setupUI()
         setupBindings()
     }
     
+    
+    
     func setupBindings() {
+        
            viewModel.dataSource.bind { [weak self] _ in
             guard self != nil else { return }
                DispatchQueue.main.async {
-                print("classes: \(self!.viewModel.dataSource.value?.classes ?? [])")
-                print("types: \(self!.viewModel.dataSource.value?.types ?? [])")
-                print("races: \(self!.viewModel.dataSource.value?.races ?? [])")
+                print("classes: \(self!.viewModel.dataSource.value )")
                 self?.tableView.reloadData()
                }
            }
@@ -55,6 +58,7 @@ class HomeViewController: UIViewController {
         // Retorna a célula da interface
         let nib = UINib(nibName: "ItemTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: ItemTableViewCell.reuseIdentifier)
+        
     }
     
     
@@ -64,12 +68,11 @@ class HomeViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = false
         self.navigationController?.navigationBar.barTintColor = UIColor(named: "background")
         self.navigationController?.navigationBar.backgroundColor =  UIColor(named: "background")
-
-        
     }
+    
     override var prefersStatusBarHidden: Bool {
           return true
-      }
+    }
     
 }
 
@@ -80,7 +83,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return viewModel.dataSource.value.count
     }
     
     func tableView(_: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -109,7 +112,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                 fatalError("Unable to create explore table view cell")
             }
         
-            return cell
+        let infos = viewModel.dataSource.value[indexPath.row]
+        cell.setup(viewModel: infos)
+        return cell
+        
         }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -117,6 +123,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
 }
+
+
 
 
 

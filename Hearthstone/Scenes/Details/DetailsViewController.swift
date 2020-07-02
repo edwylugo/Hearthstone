@@ -9,22 +9,61 @@
 import UIKit
 
 class DetailsViewController: UIViewController {
-
+    
+    var cards: [Card] = []
+    var nameGroup = ""
+    var itemGroup = ""
+    
+    @IBAction func backButton(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @IBOutlet var lbGroup: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        lbGroup.text = nameGroup
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        self.navigationController?.isNavigationBarHidden = true
+        self.navigationController?.navigationBar.barTintColor = UIColor(named: "background")
+        self.navigationController?.navigationBar.backgroundColor =  UIColor(named: "background")
+        
+        HearthstoreREST.loadCard(onComplete: { (cards) in
+                          DispatchQueue.main.async {
+                              self.cards = [cards]
+                          }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+                      }) { error in
+                          DispatchQueue.main.async {
+                              print(error)
+                              switch error {
+                              case .url:
+                                  print("Não foi possível carregar a URL")
+                              case let .taskerror(error):
+                                  CommonToUI.sharedInstance.showAlert("Hearthstone:", "Para visualizar os jogos é necessário estar conectado com a internet.", nil)
+                                  print("\(error)")
+                              case let .noResponse(error):
+                                  CommonToUI.sharedInstance.showAlert(error.localizedDescription, "Serviço fora do ar. Entre em contato com a equipe técnica para visualizar as notas encerradas.", nil)
+                              case .noData:
+                                  print("Não foi possível carregar os dados para visualizar os jogos.")
+                              case let .responseStatusCode(code):
+                                  CommonToUI.sharedInstance.showAlert("Hearthstone:", "Verificamos que o servidor está fora do ar (Status: \(code).", nil)
+                              case let .invalidJSON(error):
+                                  CommonToUI.sharedInstance.showAlert(error.localizedDescription, "Uma nova estrutura foi criada pela equipe de desenvolvedores. Entre em contato com a equipe técnica.", nil)
+                              }
+                          }
+                      }
     }
-    */
+    
+    override var prefersStatusBarHidden: Bool {
+               return true
+       }
+    
+    
 
 }
