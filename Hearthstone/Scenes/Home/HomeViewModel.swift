@@ -13,27 +13,27 @@ protocol HomeNavigationProtocol: AnyObject {
 }
 
 protocol HomeViewModelProtocol {
-    var dataSource: Observable<[Info]> { get }
+    var dataSource: Observable<Info?> { get }
     var error: Observable<Error?> { get }
     func setDataSource()
-    func didSelectItemAt(indexPath: IndexPath)
+  //  func didSelectItemAt(indexPath: IndexPath)
 }
 
 struct HomeViewModel: HomeViewModelProtocol {
     private weak var navigationDelegate: HomeNavigationProtocol?
-    var dataSource: Observable<[Info]>
+    var dataSource: Observable<Info?>
     var error: Observable<Error?>
     
     init(navigationDelegate: HomeNavigationProtocol? = nil) {
         self.navigationDelegate = navigationDelegate
         self.error = Observable(nil)
-        self.dataSource = Observable([])
+        self.dataSource = Observable(nil)
         setDataSource()
     }
     func setDataSource() {
         
         HearthstoreREST.loadInfo(onComplete: { infos in
-            self.dataSource.value = infos.ordenationsToInfo()
+            self.dataSource.value = infos.self
         }) { error in
             DispatchQueue.main.async {
                 print(error)
@@ -57,17 +57,10 @@ struct HomeViewModel: HomeViewModelProtocol {
         
     }
     
-    func didSelectItemAt(indexPath: IndexPath) {
-          guard dataSource.value.indices.contains(indexPath.row) else { return }
-          let item = dataSource.value[indexPath.row]
-          navigationDelegate?.gotoInfoDetail(info: item)
-      }
+//    func didSelectItemAt(indexPath: IndexPath) {
+//          guard dataSource.value.indices.contains(indexPath.row) else { return }
+//          let item = dataSource.value[indexPath.row]
+//          navigationDelegate?.gotoInfoDetail(info: item)
+//      }
 }
 
-extension Sequence where Iterator.Element == Info {
-    func ordenationsToInfo() -> [Info] {
-        return self.sorted {
-            $0.classes.first ?? "" > $1.classes.first ?? ""
-        }
-    }
-}

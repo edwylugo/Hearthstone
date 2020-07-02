@@ -49,7 +49,7 @@ class CommonToUI {
     }
 
     func show() {
-        if let rootVC = keyWindow!.rootViewController {
+        if let rootVC = keyWindow?.rootViewController {
             presentFromController(rootVC, self.alertController, animated: true, completion: nil)
         }
     }

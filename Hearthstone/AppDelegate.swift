@@ -11,15 +11,25 @@ import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-var enableOrientationLandscape = false
+    var enableOrientationLandscape = false
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        let viewModel = HomeViewModel(navigationDelegate: self)
+        let homeController = HomeViewController(viewModel: viewModel)
+        
+        window?.rootViewController = UINavigationController(rootViewController: homeController)
+        
         // Override point for customization after application launch.
         UINavigationBar.appearance().tintColor = .black
+        UINavigationBar.appearance().barTintColor = UIColor(named: "background")
         UINavigationBar.appearance().prefersLargeTitles = true
         UINavigationBar.appearance().barStyle = .default
-        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.black, .font: UIFont(name: "Roboto-Black", size: 27)!]
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.black, .font: UIFont(name: "Roboto-Black", size: 36)!]
         return true
     }
 
@@ -36,6 +46,14 @@ var enableOrientationLandscape = false
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+    
+    func application(_: UIApplication, supportedInterfaceOrientationsFor _: UIWindow?) -> UIInterfaceOrientationMask {
+           if enableOrientationLandscape == true {
+               return .landscape
+           }
+
+           return .portrait
+       }
 
     // MARK: - Core Data stack
 
@@ -84,3 +102,7 @@ var enableOrientationLandscape = false
 
 }
 
+
+extension AppDelegate: HomeNavigationProtocol {
+    func gotoInfoDetail(info: Info) {}
+}

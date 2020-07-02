@@ -17,6 +17,8 @@ enum HearthstoreError {
     case invalidJSON(error: Error)
 }
 
+
+
 class HearthstoreREST {
     
     // Endereço da API
@@ -26,9 +28,13 @@ class HearthstoreREST {
     private static let configuration: URLSessionConfiguration = {
         let config = URLSessionConfiguration.default
         // config.allowsCellularAccess = false
-        config.httpAdditionalHeaders = ["Content-Type": "application/json", "x-rapidapi-host":"omgvamp-hearthstone-v1.p.rapidapi.com", "x-rapidapi-key":"b855fe6446msh7f628aeb6fed556p165dbfjsn518f58738ed7"]
-        config.timeoutIntervalForRequest = 30.0
+        config.httpAdditionalHeaders = ["Content-Type": "application/json",
+                                        "x-rapidapi-host": "omgvamp-hearthstone-v1.p.rapidapi.com",
+                                        "x-rapidapi-key": "b855fe6446msh7f628aeb6fed556p165dbfjsn518f58738ed7"]
+        config.timeoutIntervalForRequest = 10.0
         config.httpMaximumConnectionsPerHost = 5
+        config.requestCachePolicy = .useProtocolCachePolicy
+        
         return config
     }()
     
@@ -37,7 +43,7 @@ class HearthstoreREST {
     
     
     // Carregar dados da entidade Sincronismo (GET)
-           class func loadInfo(onComplete: @escaping ([Info]) -> Void, onError: @escaping (HearthstoreError) -> Void) {
+           class func loadInfo(onComplete: @escaping (Info) -> Void, onError: @escaping (HearthstoreError) -> Void) {
                print("basePath: \(basePath)")
                guard let url = URL(string: basePath) else {
                    onError(.url)
@@ -56,16 +62,18 @@ class HearthstoreREST {
 
                        if response.statusCode == 200 {
                            guard let data = data else { return }
+                           print("statusCode: \(response.statusCode)")
 
                            do {
-                               let listloadInfo = try JSONDecoder().decode([Info].self, from: data)
-                               onComplete(listloadInfo)
-
+                            let infos = try JSONDecoder().decode(Info.self, from: data)
+                            onComplete(infos)
                             print("## Lista carregada com sucesso ##")
-                            print("Total: \(listloadInfo.count)")
+                            print("Total: \(infos.classes.count)")
+                            
+                            
 
                            } catch {
-                               print(error.localizedDescription)
+                               print("catch: \(error.localizedDescription)" )
                                onError(.invalidJSON(error: error))
                            }
 

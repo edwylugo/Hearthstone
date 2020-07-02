@@ -67,6 +67,9 @@
 	</dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>AvenirLTStd-Roman.otf</string>
+		<string>AvenirLTStd-Medium.otf</string>
+		<string>AvenirLTStd-Book.otf</string>
 		<string>Roboto-Medium.ttf</string>
 		<string>Roboto-Light.ttf</string>
 		<string>Roboto-Regular.ttf</string>

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5939B62824ACD5DF005EF0F6 /* UIColorRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939B62724ACD5DF005EF0F6 /* UIColorRandom.swift */; };
+		5939B63524ACECAB005EF0F6 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939B63424ACECAB005EF0F6 /* HomeCollectionViewCell.swift */; };
+		5939B64124AD331C005EF0F6 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939B64024AD331C005EF0F6 /* SectionHeader.swift */; };
+		5939B65224AD6DC4005EF0F6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939B65024AD6DC4005EF0F6 /* HomeViewController.swift */; };
+		5939B65324AD6DC4005EF0F6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5939B65124AD6DC4005EF0F6 /* HomeViewController.xib */; };
+		5939B65624AD6E42005EF0F6 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939B65424AD6E42005EF0F6 /* ItemTableViewCell.swift */; };
+		5939B65724AD6E42005EF0F6 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5939B65524AD6E42005EF0F6 /* ItemTableViewCell.xib */; };
+		5939B65A24AD7253005EF0F6 /* CubesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939B65824AD7253005EF0F6 /* CubesCollectionViewCell.swift */; };
+		5939B65B24AD7253005EF0F6 /* CubesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5939B65924AD7253005EF0F6 /* CubesCollectionViewCell.xib */; };
 		59FEF4DA24AA844C00F3BC8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF4D924AA844C00F3BC8D /* AppDelegate.swift */; };
 		59FEF4DC24AA844C00F3BC8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF4DB24AA844C00F3BC8D /* SceneDelegate.swift */; };
 		59FEF4DE24AA844C00F3BC8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF4DD24AA844C00F3BC8D /* ViewController.swift */; };
@@ -40,13 +49,24 @@
 		59FEF52924AA8E6200F3BC8D /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF52724AA8E6200F3BC8D /* DetailsViewController.swift */; };
 		59FEF52A24AA8E6200F3BC8D /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF52824AA8E6200F3BC8D /* DetailsViewController.xib */; };
 		59FEF52D24AA8E7E00F3BC8D /* InitialCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF52C24AA8E7E00F3BC8D /* InitialCoordinator.swift */; };
-		59FEF53124AA8F2D00F3BC8D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF52F24AA8F2D00F3BC8D /* HomeViewController.swift */; };
-		59FEF53224AA8F2D00F3BC8D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF53024AA8F2D00F3BC8D /* HomeViewController.xib */; };
 		59FEF53424AA9A8300F3BC8D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF53324AA9A8300F3BC8D /* HomeViewModel.swift */; };
 		59FEF53A24AA9C5800F3BC8D /* CommonToUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF53924AA9C5800F3BC8D /* CommonToUI.swift */; };
+		59FEF53C24AAB08300F3BC8D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF53B24AAB08300F3BC8D /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5939B62724ACD5DF005EF0F6 /* UIColorRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorRandom.swift; sourceTree = "<group>"; };
+		5939B63424ACECAB005EF0F6 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		5939B64024AD331C005EF0F6 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		5939B64224AD387C005EF0F6 /* AvenirLTStd-Roman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Roman.otf"; sourceTree = "<group>"; };
+		5939B64324AD387C005EF0F6 /* AvenirLTStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Book.otf"; sourceTree = "<group>"; };
+		5939B64424AD387C005EF0F6 /* AvenirLTStd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Medium.otf"; sourceTree = "<group>"; };
+		5939B65024AD6DC4005EF0F6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5939B65124AD6DC4005EF0F6 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		5939B65424AD6E42005EF0F6 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		5939B65524AD6E42005EF0F6 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		5939B65824AD7253005EF0F6 /* CubesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubesCollectionViewCell.swift; sourceTree = "<group>"; };
+		5939B65924AD7253005EF0F6 /* CubesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CubesCollectionViewCell.xib; sourceTree = "<group>"; };
 		59FEF4D624AA844C00F3BC8D /* Hearthstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hearthstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59FEF4D924AA844C00F3BC8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59FEF4DB24AA844C00F3BC8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,10 +102,9 @@
 		59FEF52724AA8E6200F3BC8D /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		59FEF52824AA8E6200F3BC8D /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		59FEF52C24AA8E7E00F3BC8D /* InitialCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialCoordinator.swift; sourceTree = "<group>"; };
-		59FEF52F24AA8F2D00F3BC8D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		59FEF53024AA8F2D00F3BC8D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		59FEF53324AA9A8300F3BC8D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		59FEF53924AA9C5800F3BC8D /* CommonToUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonToUI.swift; sourceTree = "<group>"; };
+		59FEF53B24AAB08300F3BC8D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +118,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5939B62624ACD5D0005EF0F6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5939B62724ACD5DF005EF0F6 /* UIColorRandom.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5939B63624AD0428005EF0F6 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				5939B63B24AD2F38005EF0F6 /* Title */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		5939B63B24AD2F38005EF0F6 /* Title */ = {
+			isa = PBXGroup;
+			children = (
+				5939B64024AD331C005EF0F6 /* SectionHeader.swift */,
+				5939B63424ACECAB005EF0F6 /* HomeCollectionViewCell.swift */,
+			);
+			path = Title;
+			sourceTree = "<group>";
+		};
+		5939B64524AD644B005EF0F6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5939B65424AD6E42005EF0F6 /* ItemTableViewCell.swift */,
+				5939B65524AD6E42005EF0F6 /* ItemTableViewCell.xib */,
+				5939B65824AD7253005EF0F6 /* CubesCollectionViewCell.swift */,
+				5939B65924AD7253005EF0F6 /* CubesCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		59FEF4CD24AA844C00F3BC8D = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				59FEF4F124AA85AC00F3BC8D /* Info.swift */,
+				59FEF53B24AAB08300F3BC8D /* Card.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,6 +220,9 @@
 		59FEF4F724AA8B5900F3BC8D /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				5939B64324AD387C005EF0F6 /* AvenirLTStd-Book.otf */,
+				5939B64424AD387C005EF0F6 /* AvenirLTStd-Medium.otf */,
+				5939B64224AD387C005EF0F6 /* AvenirLTStd-Roman.otf */,
 				59FEF50424AA8B6D00F3BC8D /* Roboto_Specimen_Book.pdf */,
 				59FEF4FE24AA8B6D00F3BC8D /* Roboto-Black.ttf */,
 				59FEF4FA24AA8B6C00F3BC8D /* Roboto-BlackItalic.ttf */,
@@ -208,8 +267,10 @@
 		59FEF52524AA8DFF00F3BC8D /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				59FEF52F24AA8F2D00F3BC8D /* HomeViewController.swift */,
-				59FEF53024AA8F2D00F3BC8D /* HomeViewController.xib */,
+				5939B64524AD644B005EF0F6 /* Cell */,
+				5939B65024AD6DC4005EF0F6 /* HomeViewController.swift */,
+				5939B65124AD6DC4005EF0F6 /* HomeViewController.xib */,
+				5939B63624AD0428005EF0F6 /* Header */,
 				59FEF53324AA9A8300F3BC8D /* HomeViewModel.swift */,
 			);
 			path = Home;
@@ -243,6 +304,7 @@
 		59FEF53724AA9C4100F3BC8D /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				5939B62624ACD5D0005EF0F6 /* Extensions */,
 				59FEF53824AA9C4A00F3BC8D /* Utils */,
 			);
 			path = Manager;
@@ -315,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59FEF51924AA8B6E00F3BC8D /* Roboto-ThinItalic.ttf in Resources */,
+				5939B65B24AD7253005EF0F6 /* CubesCollectionViewCell.xib in Resources */,
 				59FEF51624AA8B6E00F3BC8D /* Roboto-Condensed.ttf in Resources */,
 				59FEF51724AA8B6E00F3BC8D /* Roboto-Italic.ttf in Resources */,
 				59FEF51324AA8B6E00F3BC8D /* Roboto-Thin.ttf in Resources */,
@@ -329,13 +392,14 @@
 				59FEF50E24AA8B6E00F3BC8D /* Roboto-Bold.ttf in Resources */,
 				59FEF51224AA8B6E00F3BC8D /* Roboto-CondensedItalic.ttf in Resources */,
 				59FEF52A24AA8E6200F3BC8D /* DetailsViewController.xib in Resources */,
+				5939B65724AD6E42005EF0F6 /* ItemTableViewCell.xib in Resources */,
+				5939B65324AD6DC4005EF0F6 /* HomeViewController.xib in Resources */,
 				59FEF50924AA8B6E00F3BC8D /* Roboto-BoldCondensedItalic.ttf in Resources */,
 				59FEF50F24AA8B6E00F3BC8D /* Roboto-Black.ttf in Resources */,
 				59FEF51824AA8B6E00F3BC8D /* Roboto-Regular.ttf in Resources */,
 				59FEF50A24AA8B6E00F3BC8D /* Roboto-BoldItalic.ttf in Resources */,
 				59FEF51124AA8B6E00F3BC8D /* Roboto-BoldCondensed.ttf in Resources */,
 				59FEF4E124AA844C00F3BC8D /* Main.storyboard in Resources */,
-				59FEF53224AA8F2D00F3BC8D /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,16 +415,22 @@
 				59FEF4E424AA844C00F3BC8D /* Hearthstone.xcdatamodeld in Sources */,
 				59FEF52324AA8DB000F3BC8D /* CoordinatorProtocol.swift in Sources */,
 				59FEF52924AA8E6200F3BC8D /* DetailsViewController.swift in Sources */,
+				5939B65A24AD7253005EF0F6 /* CubesCollectionViewCell.swift in Sources */,
+				5939B65224AD6DC4005EF0F6 /* HomeViewController.swift in Sources */,
+				5939B63524ACECAB005EF0F6 /* HomeCollectionViewCell.swift in Sources */,
 				59FEF53A24AA9C5800F3BC8D /* CommonToUI.swift in Sources */,
 				59FEF4DA24AA844C00F3BC8D /* AppDelegate.swift in Sources */,
 				59FEF51B24AA8D4E00F3BC8D /* Observable.swift in Sources */,
 				59FEF52024AA8D9800F3BC8D /* NavigationController.swift in Sources */,
 				59FEF4F524AA894F00F3BC8D /* HearthstoreREST.swift in Sources */,
 				59FEF53424AA9A8300F3BC8D /* HomeViewModel.swift in Sources */,
+				5939B64124AD331C005EF0F6 /* SectionHeader.swift in Sources */,
 				59FEF51D24AA8D6700F3BC8D /* CheckInternet.swift in Sources */,
 				59FEF4F224AA85AC00F3BC8D /* Info.swift in Sources */,
-				59FEF53124AA8F2D00F3BC8D /* HomeViewController.swift in Sources */,
+				5939B62824ACD5DF005EF0F6 /* UIColorRandom.swift in Sources */,
 				59FEF4DC24AA844C00F3BC8D /* SceneDelegate.swift in Sources */,
+				5939B65624AD6E42005EF0F6 /* ItemTableViewCell.swift in Sources */,
+				59FEF53C24AAB08300F3BC8D /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

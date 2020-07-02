@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     @IBAction func goTabBarApp(_ sender: Any) {
         let coordinator = InitialCoordinator(presenter: self.navigationController!)
-        coordinator.start()
+        coordinator.start()        
     }
 
     override func viewDidLoad() {
@@ -34,5 +34,9 @@ class ViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
          return true
      }
+}
+
+extension ViewController: HomeNavigationProtocol {
+    func gotoInfoDetail(info: Info) {}
 }
 
