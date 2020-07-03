@@ -87,13 +87,13 @@
                                                     <rect key="frame" x="15" y="11" width="345" height="165"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JnM-Kj-Nt4">
-                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="22"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="26"/>
                                                             <fontDescription key="fontDescription" name="AvenirLTStd-Roman" family="Avenir LT Std" pointSize="22"/>
                                                             <color key="textColor" name="grayTitle"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PFq-B5-l3Q">
-                                                            <rect key="frame" x="0.0" y="30" width="345" height="135"/>
+                                                            <rect key="frame" x="0.0" y="34" width="345" height="131"/>
                                                             <color key="backgroundColor" name="background"/>
                                                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oAN-ir-nYH">
                                                                 <size key="itemSize" width="201" height="112"/>
@@ -103,7 +103,7 @@
                                                             </collectionViewFlowLayout>
                                                             <cells>
                                                                 <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GroupsCollectionViewCell" id="XMG-wf-TxD" customClass="GroupsCollectionViewCell" customModule="Hearthstone" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="11.5" width="201" height="112"/>
+                                                                    <rect key="frame" x="0.0" y="9.5" width="201" height="112"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="UJU-MY-DHr">
                                                                         <rect key="frame" x="0.0" y="0.0" width="201" height="112"/>
