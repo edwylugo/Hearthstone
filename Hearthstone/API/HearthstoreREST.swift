@@ -7,28 +7,6 @@
 //
 
 import Foundation
-import Alamofire
-import AlamofireObjectMapper
-
-public enum HTTPMethod: String {
-    case get     = "GET"
-    case post    = "POST"
-    case put     = "PUT"
-    case patch   = "PATCH"
-    case delete  = "DELETE"
-    case copy    = "COPY"
-    case head    = "HEAD"
-    case options = "OPTIONS"
-    case link    = "LINK"
-    case unlink  = "UNLINK"
-    case purge   = "PURGE"
-    case lock    = "LOCK"
-    case unlock  = "UNLOCK"
-    case propfind  = "PROPFIND"
-    case view = "VIEW"
-    case trace = "TRACE"
-    case connect = "CONNECT"
-}
 
 enum HearthstoreError {
     case url
@@ -43,7 +21,7 @@ class HearthstoreREST {
     
     // Endereço da API
     private static let basePath = "https://omgvamp-hearthstone-v1.p.rapidapi.com/info"
-    private static let basicPath = "https://omgvamp-hearthstone-v1.p.rapidapi.com/cards/?name=Ysera&collectible=1"
+    private static let basicPath = "https://omgvamp-hearthstone-v1.p.rapidapi.com/cards/"
     
     // Arquivo de configurações
     private static let configuration: URLSessionConfiguration = {
@@ -51,8 +29,7 @@ class HearthstoreREST {
         // config.allowsCellularAccess = false
         config.httpAdditionalHeaders = ["Content-Type": "application/json",
                                         "x-rapidapi-host": "omgvamp-hearthstone-v1.p.rapidapi.com",
-                                        "x-rapidapi-key": "b855fe6446msh7f628aeb6fed556p165dbfjsn518f58738ed7",
-                                        "useQueryString": true]
+                                        "x-rapidapi-key": "b855fe6446msh7f628aeb6fed556p165dbfjsn518f58738ed7"]
         config.timeoutIntervalForRequest = 10.0
         config.httpMaximumConnectionsPerHost = 5
         config.requestCachePolicy = .useProtocolCachePolicy
@@ -113,8 +90,11 @@ class HearthstoreREST {
            }
     
     // Carregar dados da entidade Sincronismo (GET)
-    class func loadCard(onComplete: @escaping (Card) -> Void, onError: @escaping (HearthstoreError) -> Void) {
-        print("basicPath: \(basicPath)")
+    class func loadCard(column: String, value: String, onComplete: @escaping (Card) -> Void, onError: @escaping (HearthstoreError) -> Void) {
+        
+        let urlGroup = "\(basicPath)?\(column)=\(value)&collectible=1"
+        print("basicPath: \(urlGroup)")
+        
         guard let url = URL(string: basicPath) else {
             onError(.url)
             return

@@ -12,10 +12,12 @@ class GroupsViewController: UIViewController {
     
     var infos: [Info] = []
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var viewLoading: UIView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.viewLoading.isHidden = true
     }
     
     
@@ -26,6 +28,7 @@ class GroupsViewController: UIViewController {
           self.navigationController?.navigationBar.barTintColor = UIColor(named: "background")
           self.navigationController?.navigationBar.backgroundColor =  UIColor(named: "background")
           self.title = "Hearthstoner"
+        self.viewLoading.isHidden = false
     
         HearthstoreREST.loadInfo(onComplete: { (infos) in
             DispatchQueue.main.async {
@@ -38,11 +41,11 @@ class GroupsViewController: UIViewController {
                 print("infos races count: \(infos.races.count)" )
                 
                 let cells = self.tableView?.visibleCells as! [GroupsTableViewCell]
-
                 for cell in cells {
                     cell.collectionView.reloadData()
                 }
                 
+                self.viewLoading.isHidden = true
             }
             
         }) { error in
@@ -52,16 +55,26 @@ class GroupsViewController: UIViewController {
                 case .url:
                     print("Não foi possível carregar a URL")
                 case let .taskerror(error):
+                    self.viewLoading.isHidden = true
                     CommonToUI.sharedInstance.showAlert("Hearthstone:", "Para visualizar os jogos é necessário estar conectado com a internet.", nil)
                     print("\(error)")
+                    
                 case let .noResponse(error):
+                    self.viewLoading.isHidden = true
                     CommonToUI.sharedInstance.showAlert(error.localizedDescription, "Serviço fora do ar. Entre em contato com a equipe técnica para visualizar as notas encerradas.", nil)
+                    
                 case .noData:
+                    self.viewLoading.isHidden = true
                     print("Não foi possível carregar os dados para visualizar os jogos.")
+                    
                 case let .responseStatusCode(code):
+                    self.viewLoading.isHidden = true
                     CommonToUI.sharedInstance.showAlert("Hearthstone:", "Verificamos que o servidor está fora do ar (Status: \(code).", nil)
+                    
                 case let .invalidJSON(error):
+                    self.viewLoading.isHidden = true
                     CommonToUI.sharedInstance.showAlert(error.localizedDescription, "Uma nova estrutura foi criada pela equipe de desenvolvedores. Entre em contato com a equipe técnica.", nil)
+                    
                 }
             }
         }
@@ -146,9 +159,7 @@ extension GroupsViewController: UICollectionViewDelegate, UICollectionViewDataSo
         if collectionView.tag == 2 {
             return races
         }
-      
         return 0
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -186,26 +197,25 @@ extension GroupsViewController: UICollectionViewDelegate, UICollectionViewDataSo
                 print("Item: \(info.classes[indexPath.row])")
                 vc.itemGroup = "\(info.classes[indexPath.row])"
                 vc.nameGroup = "Classes"
+                vc.column = "playerClass"
             }
 
             if collectionView.tag == 1 {
             print("Item: \(info.types[indexPath.row])")
                 vc.itemGroup = "\(info.types[indexPath.row])"
                 vc.nameGroup = "Types"
+                vc.column = "type"
             }
 
             if collectionView.tag == 2 {
             print("Item: \(info.races[indexPath.row])")
                 vc.itemGroup = "\(info.races[indexPath.row])"
                 vc.nameGroup = "Races"
+                vc.column = "race"
             }
         }
         self.navigationController?.pushViewController(vc, animated: true)
-
     }
-    
-    
-    
     
 }
 

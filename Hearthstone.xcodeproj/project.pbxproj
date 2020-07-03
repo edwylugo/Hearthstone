@@ -17,10 +17,11 @@
 		5939B65724AD6E42005EF0F6 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5939B65524AD6E42005EF0F6 /* ItemTableViewCell.xib */; };
 		5939B65A24AD7253005EF0F6 /* CubesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939B65824AD7253005EF0F6 /* CubesCollectionViewCell.swift */; };
 		5939B65B24AD7253005EF0F6 /* CubesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5939B65924AD7253005EF0F6 /* CubesCollectionViewCell.xib */; };
+		5969AE4824AEAC3C00681289 /* DetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5969AE4724AEAC3C00681289 /* DetailsCollectionViewCell.swift */; };
+		5969AE4A24AEAC5000681289 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5969AE4924AEAC5000681289 /* DetailsTableViewCell.swift */; };
 		5988546724AE348B00CA8856 /* GroupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5988546624AE348B00CA8856 /* GroupsTableViewCell.swift */; };
 		5988546924AE34A000CA8856 /* GroupsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5988546824AE34A000CA8856 /* GroupsCollectionViewCell.swift */; };
 		5988546B24AE37F600CA8856 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5988546A24AE37F600CA8856 /* GroupsViewController.swift */; };
-		5988547024AE97C000CA8856 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5988546F24AE97C000CA8856 /* DetailsTableViewCell.swift */; };
 		59FEF4DA24AA844C00F3BC8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF4D924AA844C00F3BC8D /* AppDelegate.swift */; };
 		59FEF4DC24AA844C00F3BC8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF4DB24AA844C00F3BC8D /* SceneDelegate.swift */; };
 		59FEF4DE24AA844C00F3BC8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF4DD24AA844C00F3BC8D /* ViewController.swift */; };
@@ -73,10 +74,11 @@
 		5939B65524AD6E42005EF0F6 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
 		5939B65824AD7253005EF0F6 /* CubesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubesCollectionViewCell.swift; sourceTree = "<group>"; };
 		5939B65924AD7253005EF0F6 /* CubesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CubesCollectionViewCell.xib; sourceTree = "<group>"; };
+		5969AE4724AEAC3C00681289 /* DetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCollectionViewCell.swift; sourceTree = "<group>"; };
+		5969AE4924AEAC5000681289 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
 		5988546624AE348B00CA8856 /* GroupsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableViewCell.swift; sourceTree = "<group>"; };
 		5988546824AE34A000CA8856 /* GroupsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsCollectionViewCell.swift; sourceTree = "<group>"; };
 		5988546A24AE37F600CA8856 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
-		5988546F24AE97C000CA8856 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
 		59FEF4D624AA844C00F3BC8D /* Hearthstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hearthstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59FEF4D924AA844C00F3BC8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59FEF4DB24AA844C00F3BC8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -174,6 +176,15 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		5969AE4624AEAC2500681289 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5969AE4724AEAC3C00681289 /* DetailsCollectionViewCell.swift */,
+				5969AE4924AEAC5000681289 /* DetailsTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		5988546524AE345900CA8856 /* Backup */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,14 +195,6 @@
 				59FEF53324AA9A8300F3BC8D /* HomeViewModel.swift */,
 			);
 			path = Backup;
-			sourceTree = "<group>";
-		};
-		5988546E24AE978400CA8856 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				5988546F24AE97C000CA8856 /* DetailsTableViewCell.swift */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		59FEF4CD24AA844C00F3BC8D = {
@@ -320,7 +323,7 @@
 		59FEF52624AA8E0900F3BC8D /* Details */ = {
 			isa = PBXGroup;
 			children = (
-				5988546E24AE978400CA8856 /* Cell */,
+				5969AE4624AEAC2500681289 /* Cell */,
 				59FEF52724AA8E6200F3BC8D /* DetailsViewController.swift */,
 			);
 			path = Details;
@@ -504,6 +507,7 @@
 			files = (
 				59FEF4DE24AA844C00F3BC8D /* ViewController.swift in Sources */,
 				59FEF52D24AA8E7E00F3BC8D /* InitialCoordinator.swift in Sources */,
+				5969AE4A24AEAC5000681289 /* DetailsTableViewCell.swift in Sources */,
 				59FEF4E424AA844C00F3BC8D /* Hearthstone.xcdatamodeld in Sources */,
 				59FEF52324AA8DB000F3BC8D /* CoordinatorProtocol.swift in Sources */,
 				59FEF52924AA8E6200F3BC8D /* DetailsViewController.swift in Sources */,
@@ -514,11 +518,11 @@
 				59FEF53A24AA9C5800F3BC8D /* CommonToUI.swift in Sources */,
 				59FEF4DA24AA844C00F3BC8D /* AppDelegate.swift in Sources */,
 				59FEF51B24AA8D4E00F3BC8D /* Observable.swift in Sources */,
+				5969AE4824AEAC3C00681289 /* DetailsCollectionViewCell.swift in Sources */,
 				59FEF52024AA8D9800F3BC8D /* NavigationController.swift in Sources */,
 				59FEF4F524AA894F00F3BC8D /* HearthstoreREST.swift in Sources */,
 				59FEF53424AA9A8300F3BC8D /* HomeViewModel.swift in Sources */,
 				5939B64124AD331C005EF0F6 /* SectionHeader.swift in Sources */,
-				5988547024AE97C000CA8856 /* DetailsTableViewCell.swift in Sources */,
 				59FEF51D24AA8D6700F3BC8D /* CheckInternet.swift in Sources */,
 				59FEF4F224AA85AC00F3BC8D /* Info.swift in Sources */,
 				5939B62824ACD5DF005EF0F6 /* UIColorRandom.swift in Sources */,

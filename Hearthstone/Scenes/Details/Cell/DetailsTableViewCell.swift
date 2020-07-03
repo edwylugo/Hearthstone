@@ -10,6 +10,7 @@ import UIKit
 
 class DetailsTableViewCell: UITableViewCell {
 
+    @IBOutlet var collectionView: UICollectionView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
