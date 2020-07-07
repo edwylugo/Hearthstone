@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B588D9C94F6F3F316A845E4 /* Pods_Hearthstone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 462DA0F3CA831A7607392A29 /* Pods_Hearthstone.framework */; };
+		5939B62824ACD5DF005EF0F6 /* UIColorRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939B62724ACD5DF005EF0F6 /* UIColorRandom.swift */; };
+		5939B63524ACECAB005EF0F6 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939B63424ACECAB005EF0F6 /* HomeCollectionViewCell.swift */; };
+		5939B64124AD331C005EF0F6 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939B64024AD331C005EF0F6 /* SectionHeader.swift */; };
+		5939B65224AD6DC4005EF0F6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939B65024AD6DC4005EF0F6 /* HomeViewController.swift */; };
+		5939B65324AD6DC4005EF0F6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5939B65124AD6DC4005EF0F6 /* HomeViewController.xib */; };
+		5939B65624AD6E42005EF0F6 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939B65424AD6E42005EF0F6 /* ItemTableViewCell.swift */; };
+		5939B65724AD6E42005EF0F6 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5939B65524AD6E42005EF0F6 /* ItemTableViewCell.xib */; };
+		5939B65A24AD7253005EF0F6 /* CubesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939B65824AD7253005EF0F6 /* CubesCollectionViewCell.swift */; };
+		5939B65B24AD7253005EF0F6 /* CubesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5939B65924AD7253005EF0F6 /* CubesCollectionViewCell.xib */; };
+		5969AE4824AEAC3C00681289 /* DetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5969AE4724AEAC3C00681289 /* DetailsCollectionViewCell.swift */; };
+		5969AE4A24AEAC5000681289 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5969AE4924AEAC5000681289 /* DetailsTableViewCell.swift */; };
+		5988546724AE348B00CA8856 /* GroupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5988546624AE348B00CA8856 /* GroupsTableViewCell.swift */; };
+		5988546924AE34A000CA8856 /* GroupsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5988546824AE34A000CA8856 /* GroupsCollectionViewCell.swift */; };
+		5988546B24AE37F600CA8856 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5988546A24AE37F600CA8856 /* GroupsViewController.swift */; };
+		59FEF4DA24AA844C00F3BC8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF4D924AA844C00F3BC8D /* AppDelegate.swift */; };
+		59FEF4DC24AA844C00F3BC8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF4DB24AA844C00F3BC8D /* SceneDelegate.swift */; };
+		59FEF4DE24AA844C00F3BC8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF4DD24AA844C00F3BC8D /* ViewController.swift */; };
+		59FEF4E124AA844C00F3BC8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF4DF24AA844C00F3BC8D /* Main.storyboard */; };
+		59FEF4E424AA844C00F3BC8D /* Hearthstone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF4E224AA844C00F3BC8D /* Hearthstone.xcdatamodeld */; };
+		59FEF4E624AA845100F3BC8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF4E524AA845100F3BC8D /* Assets.xcassets */; };
+		59FEF4E924AA845100F3BC8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF4E724AA845100F3BC8D /* LaunchScreen.storyboard */; };
+		59FEF4F224AA85AC00F3BC8D /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF4F124AA85AC00F3BC8D /* Info.swift */; };
+		59FEF4F524AA894F00F3BC8D /* HearthstoreREST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF4F424AA894F00F3BC8D /* HearthstoreREST.swift */; };
+		59FEF50924AA8B6E00F3BC8D /* Roboto-BoldCondensedItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF4F824AA8B6C00F3BC8D /* Roboto-BoldCondensedItalic.ttf */; };
+		59FEF50A24AA8B6E00F3BC8D /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF4F924AA8B6C00F3BC8D /* Roboto-BoldItalic.ttf */; };
+		59FEF50B24AA8B6E00F3BC8D /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF4FA24AA8B6C00F3BC8D /* Roboto-BlackItalic.ttf */; };
+		59FEF50C24AA8B6E00F3BC8D /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF4FB24AA8B6D00F3BC8D /* Roboto-Medium.ttf */; };
+		59FEF50D24AA8B6E00F3BC8D /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF4FC24AA8B6D00F3BC8D /* Roboto-MediumItalic.ttf */; };
+		59FEF50E24AA8B6E00F3BC8D /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF4FD24AA8B6D00F3BC8D /* Roboto-Bold.ttf */; };
+		59FEF50F24AA8B6E00F3BC8D /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF4FE24AA8B6D00F3BC8D /* Roboto-Black.ttf */; };
+		59FEF51024AA8B6E00F3BC8D /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF4FF24AA8B6D00F3BC8D /* Roboto-Light.ttf */; };
+		59FEF51124AA8B6E00F3BC8D /* Roboto-BoldCondensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF50024AA8B6D00F3BC8D /* Roboto-BoldCondensed.ttf */; };
+		59FEF51224AA8B6E00F3BC8D /* Roboto-CondensedItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF50124AA8B6D00F3BC8D /* Roboto-CondensedItalic.ttf */; };
+		59FEF51324AA8B6E00F3BC8D /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF50224AA8B6D00F3BC8D /* Roboto-Thin.ttf */; };
+		59FEF51424AA8B6E00F3BC8D /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF50324AA8B6D00F3BC8D /* Roboto-LightItalic.ttf */; };
+		59FEF51524AA8B6E00F3BC8D /* Roboto_Specimen_Book.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF50424AA8B6D00F3BC8D /* Roboto_Specimen_Book.pdf */; };
+		59FEF51624AA8B6E00F3BC8D /* Roboto-Condensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF50524AA8B6D00F3BC8D /* Roboto-Condensed.ttf */; };
+		59FEF51724AA8B6E00F3BC8D /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF50624AA8B6E00F3BC8D /* Roboto-Italic.ttf */; };
+		59FEF51824AA8B6E00F3BC8D /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF50724AA8B6E00F3BC8D /* Roboto-Regular.ttf */; };
+		59FEF51924AA8B6E00F3BC8D /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59FEF50824AA8B6E00F3BC8D /* Roboto-ThinItalic.ttf */; };
+		59FEF51B24AA8D4E00F3BC8D /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF51A24AA8D4E00F3BC8D /* Observable.swift */; };
+		59FEF51D24AA8D6700F3BC8D /* CheckInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF51C24AA8D6700F3BC8D /* CheckInternet.swift */; };
+		59FEF52024AA8D9800F3BC8D /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF51F24AA8D9800F3BC8D /* NavigationController.swift */; };
+		59FEF52324AA8DB000F3BC8D /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF52224AA8DB000F3BC8D /* CoordinatorProtocol.swift */; };
+		59FEF52924AA8E6200F3BC8D /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF52724AA8E6200F3BC8D /* DetailsViewController.swift */; };
+		59FEF52D24AA8E7E00F3BC8D /* InitialCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF52C24AA8E7E00F3BC8D /* InitialCoordinator.swift */; };
+		59FEF53424AA9A8300F3BC8D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF53324AA9A8300F3BC8D /* HomeViewModel.swift */; };
+		59FEF53A24AA9C5800F3BC8D /* CommonToUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF53924AA9C5800F3BC8D /* CommonToUI.swift */; };
+		59FEF53C24AAB08300F3BC8D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEF53B24AAB08300F3BC8D /* Card.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12106D5F754B85254E573887 /* Pods-Hearthstone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hearthstone.debug.xcconfig"; path = "Target Support Files/Pods-Hearthstone/Pods-Hearthstone.debug.xcconfig"; sourceTree = "<group>"; };
+		462DA0F3CA831A7607392A29 /* Pods_Hearthstone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hearthstone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5939B62724ACD5DF005EF0F6 /* UIColorRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorRandom.swift; sourceTree = "<group>"; };
+		5939B63424ACECAB005EF0F6 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		5939B64024AD331C005EF0F6 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		5939B64224AD387C005EF0F6 /* AvenirLTStd-Roman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Roman.otf"; sourceTree = "<group>"; };
+		5939B64324AD387C005EF0F6 /* AvenirLTStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Book.otf"; sourceTree = "<group>"; };
+		5939B64424AD387C005EF0F6 /* AvenirLTStd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Medium.otf"; sourceTree = "<group>"; };
+		5939B65024AD6DC4005EF0F6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5939B65124AD6DC4005EF0F6 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		5939B65424AD6E42005EF0F6 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		5939B65524AD6E42005EF0F6 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		5939B65824AD7253005EF0F6 /* CubesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubesCollectionViewCell.swift; sourceTree = "<group>"; };
+		5939B65924AD7253005EF0F6 /* CubesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CubesCollectionViewCell.xib; sourceTree = "<group>"; };
+		5969AE4724AEAC3C00681289 /* DetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCollectionViewCell.swift; sourceTree = "<group>"; };
+		5969AE4924AEAC5000681289 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
+		5988546624AE348B00CA8856 /* GroupsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableViewCell.swift; sourceTree = "<group>"; };
+		5988546824AE34A000CA8856 /* GroupsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsCollectionViewCell.swift; sourceTree = "<group>"; };
+		5988546A24AE37F600CA8856 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
+		59FEF4D624AA844C00F3BC8D /* Hearthstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hearthstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59FEF4D924AA844C00F3BC8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		59FEF4DB24AA844C00F3BC8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		59FEF4DD24AA844C00F3BC8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		59FEF4E024AA844C00F3BC8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		59FEF4E324AA844C00F3BC8D /* Hearthstone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hearthstone.xcdatamodel; sourceTree = "<group>"; };
+		59FEF4E524AA845100F3BC8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59FEF4E824AA845100F3BC8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		59FEF4EA24AA845100F3BC8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59FEF4F124AA85AC00F3BC8D /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		59FEF4F424AA894F00F3BC8D /* HearthstoreREST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearthstoreREST.swift; sourceTree = "<group>"; };
+		59FEF4F824AA8B6C00F3BC8D /* Roboto-BoldCondensedItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldCondensedItalic.ttf"; sourceTree = "<group>"; };
+		59FEF4F924AA8B6C00F3BC8D /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		59FEF4FA24AA8B6C00F3BC8D /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		59FEF4FB24AA8B6D00F3BC8D /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		59FEF4FC24AA8B6D00F3BC8D /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		59FEF4FD24AA8B6D00F3BC8D /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		59FEF4FE24AA8B6D00F3BC8D /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		59FEF4FF24AA8B6D00F3BC8D /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		59FEF50024AA8B6D00F3BC8D /* Roboto-BoldCondensed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldCondensed.ttf"; sourceTree = "<group>"; };
+		59FEF50124AA8B6D00F3BC8D /* Roboto-CondensedItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-CondensedItalic.ttf"; sourceTree = "<group>"; };
+		59FEF50224AA8B6D00F3BC8D /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		59FEF50324AA8B6D00F3BC8D /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		59FEF50424AA8B6D00F3BC8D /* Roboto_Specimen_Book.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Roboto_Specimen_Book.pdf; sourceTree = "<group>"; };
+		59FEF50524AA8B6D00F3BC8D /* Roboto-Condensed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Condensed.ttf"; sourceTree = "<group>"; };
+		59FEF50624AA8B6E00F3BC8D /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		59FEF50724AA8B6E00F3BC8D /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		59FEF50824AA8B6E00F3BC8D /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		59FEF51A24AA8D4E00F3BC8D /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		59FEF51C24AA8D6700F3BC8D /* CheckInternet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInternet.swift; sourceTree = "<group>"; };
+		59FEF51F24AA8D9800F3BC8D /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		59FEF52224AA8DB000F3BC8D /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		59FEF52724AA8E6200F3BC8D /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		59FEF52C24AA8E7E00F3BC8D /* InitialCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialCoordinator.swift; sourceTree = "<group>"; };
+		59FEF53324AA9A8300F3BC8D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		59FEF53924AA9C5800F3BC8D /* CommonToUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonToUI.swift; sourceTree = "<group>"; };
+		59FEF53B24AAB08300F3BC8D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		98CDF05C27072F673D955116 /* Pods-Hearthstone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hearthstone.release.xcconfig"; path = "Target Support Files/Pods-Hearthstone/Pods-Hearthstone.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59FEF4D324AA844C00F3BC8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B588D9C94F6F3F316A845E4 /* Pods_Hearthstone.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E97B0B781B3ADD059449F24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12106D5F754B85254E573887 /* Pods-Hearthstone.debug.xcconfig */,
+				98CDF05C27072F673D955116 /* Pods-Hearthstone.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5939B62624ACD5D0005EF0F6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5939B62724ACD5DF005EF0F6 /* UIColorRandom.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5939B63624AD0428005EF0F6 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				5939B63B24AD2F38005EF0F6 /* Title */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		5939B63B24AD2F38005EF0F6 /* Title */ = {
+			isa = PBXGroup;
+			children = (
+				5939B64024AD331C005EF0F6 /* SectionHeader.swift */,
+				5939B63424ACECAB005EF0F6 /* HomeCollectionViewCell.swift */,
+			);
+			path = Title;
+			sourceTree = "<group>";
+		};
+		5939B64524AD644B005EF0F6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5939B65424AD6E42005EF0F6 /* ItemTableViewCell.swift */,
+				5939B65524AD6E42005EF0F6 /* ItemTableViewCell.xib */,
+				5939B65824AD7253005EF0F6 /* CubesCollectionViewCell.swift */,
+				5939B65924AD7253005EF0F6 /* CubesCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		5969AE4624AEAC2500681289 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5969AE4724AEAC3C00681289 /* DetailsCollectionViewCell.swift */,
+				5969AE4924AEAC5000681289 /* DetailsTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		5988546524AE345900CA8856 /* Backup */ = {
+			isa = PBXGroup;
+			children = (
+				5939B64524AD644B005EF0F6 /* Cell */,
+				5939B65024AD6DC4005EF0F6 /* HomeViewController.swift */,
+				5939B65124AD6DC4005EF0F6 /* HomeViewController.xib */,
+				5939B63624AD0428005EF0F6 /* Header */,
+				59FEF53324AA9A8300F3BC8D /* HomeViewModel.swift */,
+			);
+			path = Backup;
+			sourceTree = "<group>";
+		};
+		59FEF4CD24AA844C00F3BC8D = {
+			isa = PBXGroup;
+			children = (
+				59FEF4D824AA844C00F3BC8D /* Hearthstone */,
+				59FEF4D724AA844C00F3BC8D /* Products */,
+				2E97B0B781B3ADD059449F24 /* Pods */,
+				99E44AD5972AB0B18FE8AE57 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		59FEF4D724AA844C00F3BC8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59FEF4D624AA844C00F3BC8D /* Hearthstone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59FEF4D824AA844C00F3BC8D /* Hearthstone */ = {
+			isa = PBXGroup;
+			children = (
+				59FEF4D924AA844C00F3BC8D /* AppDelegate.swift */,
+				59FEF4DB24AA844C00F3BC8D /* SceneDelegate.swift */,
+				59FEF51A24AA8D4E00F3BC8D /* Observable.swift */,
+				59FEF51C24AA8D6700F3BC8D /* CheckInternet.swift */,
+				59FEF4DF24AA844C00F3BC8D /* Main.storyboard */,
+				59FEF4EA24AA845100F3BC8D /* Info.plist */,
+				59FEF51E24AA8D8900F3BC8D /* Coordinator */,
+				59FEF4F324AA892300F3BC8D /* API */,
+				59FEF4F024AA859700F3BC8D /* Model */,
+				59FEF52424AA8DD700F3BC8D /* Scenes */,
+				59FEF53724AA9C4100F3BC8D /* Manager */,
+				59FEF4F624AA8B4400F3BC8D /* Resources */,
+				59FEF4E224AA844C00F3BC8D /* Hearthstone.xcdatamodeld */,
+			);
+			path = Hearthstone;
+			sourceTree = "<group>";
+		};
+		59FEF4F024AA859700F3BC8D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				59FEF4F124AA85AC00F3BC8D /* Info.swift */,
+				59FEF53B24AAB08300F3BC8D /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		59FEF4F324AA892300F3BC8D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				59FEF4F424AA894F00F3BC8D /* HearthstoreREST.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		59FEF4F624AA8B4400F3BC8D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				59FEF4F724AA8B5900F3BC8D /* Fonts */,
+				59FEF4E524AA845100F3BC8D /* Assets.xcassets */,
+				59FEF4E724AA845100F3BC8D /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		59FEF4F724AA8B5900F3BC8D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5939B64324AD387C005EF0F6 /* AvenirLTStd-Book.otf */,
+				5939B64424AD387C005EF0F6 /* AvenirLTStd-Medium.otf */,
+				5939B64224AD387C005EF0F6 /* AvenirLTStd-Roman.otf */,
+				59FEF50424AA8B6D00F3BC8D /* Roboto_Specimen_Book.pdf */,
+				59FEF4FE24AA8B6D00F3BC8D /* Roboto-Black.ttf */,
+				59FEF4FA24AA8B6C00F3BC8D /* Roboto-BlackItalic.ttf */,
+				59FEF4FD24AA8B6D00F3BC8D /* Roboto-Bold.ttf */,
+				59FEF50024AA8B6D00F3BC8D /* Roboto-BoldCondensed.ttf */,
+				59FEF4F824AA8B6C00F3BC8D /* Roboto-BoldCondensedItalic.ttf */,
+				59FEF4F924AA8B6C00F3BC8D /* Roboto-BoldItalic.ttf */,
+				59FEF50524AA8B6D00F3BC8D /* Roboto-Condensed.ttf */,
+				59FEF50124AA8B6D00F3BC8D /* Roboto-CondensedItalic.ttf */,
+				59FEF50624AA8B6E00F3BC8D /* Roboto-Italic.ttf */,
+				59FEF4FF24AA8B6D00F3BC8D /* Roboto-Light.ttf */,
+				59FEF50324AA8B6D00F3BC8D /* Roboto-LightItalic.ttf */,
+				59FEF4FB24AA8B6D00F3BC8D /* Roboto-Medium.ttf */,
+				59FEF4FC24AA8B6D00F3BC8D /* Roboto-MediumItalic.ttf */,
+				59FEF50724AA8B6E00F3BC8D /* Roboto-Regular.ttf */,
+				59FEF50224AA8B6D00F3BC8D /* Roboto-Thin.ttf */,
+				59FEF50824AA8B6E00F3BC8D /* Roboto-ThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		59FEF51E24AA8D8900F3BC8D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				59FEF51F24AA8D9800F3BC8D /* NavigationController.swift */,
+				59FEF52224AA8DB000F3BC8D /* CoordinatorProtocol.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		59FEF52424AA8DD700F3BC8D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				59FEF52B24AA8E6D00F3BC8D /* InitialCoordinator */,
+				59FEF52E24AA8F1B00F3BC8D /* Start */,
+				59FEF52524AA8DFF00F3BC8D /* Home */,
+				59FEF52624AA8E0900F3BC8D /* Details */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		59FEF52524AA8DFF00F3BC8D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5988546524AE345900CA8856 /* Backup */,
+				5988546624AE348B00CA8856 /* GroupsTableViewCell.swift */,
+				5988546824AE34A000CA8856 /* GroupsCollectionViewCell.swift */,
+				5988546A24AE37F600CA8856 /* GroupsViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		59FEF52624AA8E0900F3BC8D /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				5969AE4624AEAC2500681289 /* Cell */,
+				59FEF52724AA8E6200F3BC8D /* DetailsViewController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		59FEF52B24AA8E6D00F3BC8D /* InitialCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				59FEF52C24AA8E7E00F3BC8D /* InitialCoordinator.swift */,
+			);
+			path = InitialCoordinator;
+			sourceTree = "<group>";
+		};
+		59FEF52E24AA8F1B00F3BC8D /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				59FEF4DD24AA844C00F3BC8D /* ViewController.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		59FEF53724AA9C4100F3BC8D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5939B62624ACD5D0005EF0F6 /* Extensions */,
+				59FEF53824AA9C4A00F3BC8D /* Utils */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		59FEF53824AA9C4A00F3BC8D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				59FEF53924AA9C5800F3BC8D /* CommonToUI.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		99E44AD5972AB0B18FE8AE57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				462DA0F3CA831A7607392A29 /* Pods_Hearthstone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59FEF4D524AA844C00F3BC8D /* Hearthstone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59FEF4ED24AA845100F3BC8D /* Build configuration list for PBXNativeTarget "Hearthstone" */;
+			buildPhases = (
+				C56C2F91AA686062D33324AA /* [CP] Check Pods Manifest.lock */,
+				59FEF4D224AA844C00F3BC8D /* Sources */,
+				59FEF4D324AA844C00F3BC8D /* Frameworks */,
+				59FEF4D424AA844C00F3BC8D /* Resources */,
+				6A5AD228EC6ED2A9FCB752D0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hearthstone;
+			productName = Hearthstone;
+			productReference = 59FEF4D624AA844C00F3BC8D /* Hearthstone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59FEF4CE24AA844C00F3BC8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Edwy Lugo";
+				TargetAttributes = {
+					59FEF4D524AA844C00F3BC8D = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 59FEF4D124AA844C00F3BC8D /* Build configuration list for PBXProject "Hearthstone" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59FEF4CD24AA844C00F3BC8D;
+			productRefGroup = 59FEF4D724AA844C00F3BC8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59FEF4D524AA844C00F3BC8D /* Hearthstone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59FEF4D424AA844C00F3BC8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59FEF51924AA8B6E00F3BC8D /* Roboto-ThinItalic.ttf in Resources */,
+				5939B65B24AD7253005EF0F6 /* CubesCollectionViewCell.xib in Resources */,
+				59FEF51624AA8B6E00F3BC8D /* Roboto-Condensed.ttf in Resources */,
+				59FEF51724AA8B6E00F3BC8D /* Roboto-Italic.ttf in Resources */,
+				59FEF51324AA8B6E00F3BC8D /* Roboto-Thin.ttf in Resources */,
+				59FEF4E924AA845100F3BC8D /* LaunchScreen.storyboard in Resources */,
+				59FEF51524AA8B6E00F3BC8D /* Roboto_Specimen_Book.pdf in Resources */,
+				59FEF51424AA8B6E00F3BC8D /* Roboto-LightItalic.ttf in Resources */,
+				59FEF50B24AA8B6E00F3BC8D /* Roboto-BlackItalic.ttf in Resources */,
+				59FEF4E624AA845100F3BC8D /* Assets.xcassets in Resources */,
+				59FEF51024AA8B6E00F3BC8D /* Roboto-Light.ttf in Resources */,
+				59FEF50C24AA8B6E00F3BC8D /* Roboto-Medium.ttf in Resources */,
+				59FEF50D24AA8B6E00F3BC8D /* Roboto-MediumItalic.ttf in Resources */,
+				59FEF50E24AA8B6E00F3BC8D /* Roboto-Bold.ttf in Resources */,
+				59FEF51224AA8B6E00F3BC8D /* Roboto-CondensedItalic.ttf in Resources */,
+				5939B65724AD6E42005EF0F6 /* ItemTableViewCell.xib in Resources */,
+				5939B65324AD6DC4005EF0F6 /* HomeViewController.xib in Resources */,
+				59FEF50924AA8B6E00F3BC8D /* Roboto-BoldCondensedItalic.ttf in Resources */,
+				59FEF50F24AA8B6E00F3BC8D /* Roboto-Black.ttf in Resources */,
+				59FEF51824AA8B6E00F3BC8D /* Roboto-Regular.ttf in Resources */,
+				59FEF50A24AA8B6E00F3BC8D /* Roboto-BoldItalic.ttf in Resources */,
+				59FEF51124AA8B6E00F3BC8D /* Roboto-BoldCondensed.ttf in Resources */,
+				59FEF4E124AA844C00F3BC8D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A5AD228EC6ED2A9FCB752D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hearthstone/Pods-Hearthstone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hearthstone/Pods-Hearthstone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hearthstone/Pods-Hearthstone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C56C2F91AA686062D33324AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hearthstone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59FEF4D224AA844C00F3BC8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59FEF4DE24AA844C00F3BC8D /* ViewController.swift in Sources */,
+				59FEF52D24AA8E7E00F3BC8D /* InitialCoordinator.swift in Sources */,
+				5969AE4A24AEAC5000681289 /* DetailsTableViewCell.swift in Sources */,
+				59FEF4E424AA844C00F3BC8D /* Hearthstone.xcdatamodeld in Sources */,
+				59FEF52324AA8DB000F3BC8D /* CoordinatorProtocol.swift in Sources */,
+				59FEF52924AA8E6200F3BC8D /* DetailsViewController.swift in Sources */,
+				5939B65A24AD7253005EF0F6 /* CubesCollectionViewCell.swift in Sources */,
+				5939B65224AD6DC4005EF0F6 /* HomeViewController.swift in Sources */,
+				5988546724AE348B00CA8856 /* GroupsTableViewCell.swift in Sources */,
+				5939B63524ACECAB005EF0F6 /* HomeCollectionViewCell.swift in Sources */,
+				59FEF53A24AA9C5800F3BC8D /* CommonToUI.swift in Sources */,
+				59FEF4DA24AA844C00F3BC8D /* AppDelegate.swift in Sources */,
+				59FEF51B24AA8D4E00F3BC8D /* Observable.swift in Sources */,
+				5969AE4824AEAC3C00681289 /* DetailsCollectionViewCell.swift in Sources */,
+				59FEF52024AA8D9800F3BC8D /* NavigationController.swift in Sources */,
+				59FEF4F524AA894F00F3BC8D /* HearthstoreREST.swift in Sources */,
+				59FEF53424AA9A8300F3BC8D /* HomeViewModel.swift in Sources */,
+				5939B64124AD331C005EF0F6 /* SectionHeader.swift in Sources */,
+				59FEF51D24AA8D6700F3BC8D /* CheckInternet.swift in Sources */,
+				59FEF4F224AA85AC00F3BC8D /* Info.swift in Sources */,
+				5939B62824ACD5DF005EF0F6 /* UIColorRandom.swift in Sources */,
+				59FEF4DC24AA844C00F3BC8D /* SceneDelegate.swift in Sources */,
+				5988546B24AE37F600CA8856 /* GroupsViewController.swift in Sources */,
+				5939B65624AD6E42005EF0F6 /* ItemTableViewCell.swift in Sources */,
+				59FEF53C24AAB08300F3BC8D /* Card.swift in Sources */,
+				5988546924AE34A000CA8856 /* GroupsCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		59FEF4DF24AA844C00F3BC8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59FEF4E024AA844C00F3BC8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		59FEF4E724AA845100F3BC8D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59FEF4E824AA845100F3BC8D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		59FEF4EB24AA845100F3BC8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		59FEF4EC24AA845100F3BC8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59FEF4EE24AA845100F3BC8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12106D5F754B85254E573887 /* Pods-Hearthstone.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83NFHDY43B;
+				INFOPLIST_FILE = Hearthstone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.edwylugo.Hearthstone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		59FEF4EF24AA845100F3BC8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98CDF05C27072F673D955116 /* Pods-Hearthstone.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83NFHDY43B;
+				INFOPLIST_FILE = Hearthstone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.edwylugo.Hearthstone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59FEF4D124AA844C00F3BC8D /* Build configuration list for PBXProject "Hearthstone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59FEF4EB24AA845100F3BC8D /* Debug */,
+				59FEF4EC24AA845100F3BC8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59FEF4ED24AA845100F3BC8D /* Build configuration list for PBXNativeTarget "Hearthstone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59FEF4EE24AA845100F3BC8D /* Debug */,
+				59FEF4EF24AA845100F3BC8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		59FEF4E224AA844C00F3BC8D /* Hearthstone.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				59FEF4E324AA844C00F3BC8D /* Hearthstone.xcdatamodel */,
+			);
+			currentVersion = 59FEF4E324AA844C00F3BC8D /* Hearthstone.xcdatamodel */;
+			path = Hearthstone.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 59FEF4CE24AA844C00F3BC8D /* Project object */;
+}
